@@ -10,7 +10,7 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { SearchComponent } from './components/search/search.component';
-
+import { CommonModuleNG } from './common/common.module';
 
 
 @NgModule({
@@ -23,6 +23,7 @@ import { SearchComponent } from './components/search/search.component';
     ],
     imports: [
         CommonModule,
+        CommonModuleNG,
         HttpModule,
         FormsModule,
         RouterModule.forRoot([
