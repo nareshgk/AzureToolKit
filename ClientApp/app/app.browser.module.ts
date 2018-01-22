@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppModuleShared } from './app.shared.module';
 import { AppComponent } from './components/app/app.component';
+import { SearchComponent } from './components/search/search.component';
+
 
 @NgModule({
     bootstrap: [ AppComponent ],
