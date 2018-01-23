@@ -10,7 +10,7 @@
      bingSearchAPIKey = '90c016b9e9774cc0afd34b6de42f9f27';
      constructor(private http: AzureHttpClient) { }
      searchImages(searchTerm: string): Observable<BingSearchResponse> {
-         return this.http.get('https://api.cognitive.microsoft.com/bing/v5.0/images/search?q=${searchTerm}', this.bingSearchAPIKey)
+         return this.http.get('https://api.cognitive.microsoft.com/bing/v5.0/images/search?subscription-key=$bingSearchAPIKey&q=${searchTerm}', this.bingSearchAPIKey)
              .map(response => response.json() as BingSearchResponse)
              .catch(this.handleError);
      }
