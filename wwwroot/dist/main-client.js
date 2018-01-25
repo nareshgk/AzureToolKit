@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4b7475608c90789172cf"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "aed2d3396552c8d459ba"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -70242,7 +70242,7 @@ var CommonModuleNG = (function () {
     }
     CommonModuleNG = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
-            providers: [__WEBPACK_IMPORTED_MODULE_3__services_azureHttpClient__["a" /* AzureHttpClient */], __WEBPACK_IMPORTED_MODULE_1__services_cognitive_service__["a" /* CognitiveService */], __WEBPACK_IMPORTED_MODULE_2__services_user_service__["a" /* UserService */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_3__services_azureHttpClient__["a" /* AzureHttpClient */], __WEBPACK_IMPORTED_MODULE_1__services_cognitive_service__["a" /* CognitiveService */], __WEBPACK_IMPORTED_MODULE_2__services_user_service__["a" /* UserService */], { provide: 'ORIGIN_URL', useValue: location.origin }]
         })
     ], CommonModuleNG);
     return CommonModuleNG;
