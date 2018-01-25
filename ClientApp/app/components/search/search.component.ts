@@ -12,6 +12,7 @@ import { ImageResult } from '../../common/models/bingSearchResponse';
     searchResults: ImageResult[] | null;
     isSearching = false;
     constructor(private CognitiveService: CognitiveService){ }
+    
      search(searchTerm: string) {
         this.searchResults = null;
         this.isSearching = true;
